@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>NoPotato - Get outside</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="NoPotato" class="logo" />
+        <a href="/">
+            <img src="logotext.png" class="logotext" />
+        </a>
+    </header>
+    
+    <div id="page-home">
+        <h3>Do you want to...</h3>
+            <ul>
+                <li>Stop being a friggin' couch potato? 🥔</li>
+                <li>Get outside? 🌞</li>
+                <li>Hang out with friends? 😎</li>
+            </ul>
+
+            If the answer is <font color="#00cc00"><b>Yes</b></font>, we're here to help!
+
+        <h3>How it works</h3>
+        It's simple - no signup required.
+        <ul>
+            <li>Fill out the form with your desired activities 🎨🚴🏊 and times 🕐 you are available</li>
+            <li>You'll get a generated link 🔗 that you can send to your friends</li>
+            <li>Meet up and have fun! 🎉</li>
+        </ul>
+
+        <h3>Ok I'm sold, gimme the thing</h3>
+
+        <div class="message">
+            Hi <input type="text" id="friend-name" placeholder="Friend name (optional)" />, <br />
+            I wanna go <input id="activity1" />,
+            <input id="activity2" />,
+            <input id="activity3" />
+            with you! <br />
+            I'm available next
+            <br />
+
+            <table>
+                <tr>
+                    <td><input type="checkbox" class="chk-day" id="chk-day-sun" /></td>
+                    <td><label for="chk-day-sun">Sun</label></td>
+                    <td><input id="sun-start-time" type="time" /> to <input id="sun-end-time" type="time" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chk-day" id="chk-day-mon" /></td>
+                    <td><label for="chk-day-mon">Mon</label></td>
+                    <td><input id="mon-start-time" type="time" /> to <input id="mon-end-time" type="time" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chk-day" id="chk-day-tue" /></td>
+                    <td><label for="chk-day-tue">Tue</label></td>
+                    <td><input id="tue-start-time" type="time" /> to <input id="tue-end-time" type="time" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chk-day" id="chk-day-wed" /></td>
+                    <td><label for="chk-day-wed">Wed</label></td>
+                    <td><input id="wed-start-time" type="time" /> to <input id="wed-end-time" type="time" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chk-day" id="chk-day-thu" /></td>
+                    <td><label for="chk-day-thu">Thu</label></td>
+                    <td><input id="thu-start-time" type="time" /> to <input id="thu-end-time" type="time" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chk-day" id="chk-day-fri" /></td>
+                    <td><label for="chk-day-fri">Fri</label></td>
+                    <td><input id="fri-start-time" type="time" /> to <input id="fri-end-time" type="time" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chk-day" id="chk-day-sat" /></td>
+                    <td><label for="chk-day-sat">Sat</label></td>
+                    <td><input id="sat-start-time" type="time" /> to <input id="sat-end-time" type="time" /></td>
+                </tr>
+            </table>
+            <br />
+
+        If you're interested, hmu!
+        </div>
+        
+        <br />
+        <br />
+        <input type="text" id="your-name" placeholder="Your name (optional)" />
+
+        <br /><br />
+        <button id="btn-need-ideas">I need ideas</button>
+        <button id="btn-generate-link">Generate link!</button>
+        <br /><br />
+        <div id="link-container"></div>
+    </div>
+    <div id="page-msg">
+        <br />
+        <div class="pre-msg">You have received the following message:</div><br />
+        <div class="message">
+            Hi <span id="msg-friend-name"></span>,<br />
+            I wanna go <span id="msg-activity1"></span>, <span id="msg-activity2"></span>, <span id="msg-activity3"></span> with you!<br /><br />
+            I'm available next:<br />
+            <table id="tbl-times">
+
+            </table>
+            <br/>
+            If you're interested, hmu!<br />
+            <span id="msg-your-name"></span>
+        </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <hr />
+    <h3>Our mission</h3>
+    I want to inspire people to get outside and enjoy real-life activities, together.<br />
+
+    If you like what I do, you can <a href="http://ko-fi.com/NoPotato">buy me a coffee</a>.
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
