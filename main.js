@@ -92,9 +92,7 @@ document.getElementById('btn-generate-link').addEventListener('click', function(
         'times': times
     };
 
-    let cur_url = new URL(window.location.href);
-    let url = `${cur_url.protocol}//${cur_url.hostname}:${cur_url.port}/?data=${btoa(JSON.stringify(data))}`;
-    
+    let url = `${window.location.href}/?data=${btoa(JSON.stringify(data))}`;
     document.getElementById('link-container').innerHTML = `<a href='${url}'>${url}</a>`;
 });
 
